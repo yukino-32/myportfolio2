@@ -1,0 +1,274 @@
+html, body {
+    margin: 0;   /* デフォルト余白を削除 */
+    padding: 0;  /* 念のためパディングも削除 */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* スマホでは縦並びに変更 */
+  }
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    color: rgb(67, 23, 4);
+   
+}
+
+.symbolmark img{
+    height: 80px;
+    width: 80px;
+}
+
+.logo{
+    margin: 0 30px;
+    color: rgb(67, 23, 4);
+    
+}
+
+.menu-item a{
+    color: rgb(67, 23, 4);
+}
+
+.menu-item{
+    color: rgb(67, 23, 4);
+    list-style: none;
+    padding: 10px;
+    display: inline;
+    margin: 0 20px;
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.copy{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 60px;
+    color: white;
+    text-align: left;
+    line-height: 1.4;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.copy span{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main-bg{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.main-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.works-section{
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.works-section h1{
+    margin: 0;
+    padding: 60px;
+    font-family: "Nata Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgb(67, 23, 4);
+}
+
+.works-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.works-item {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.works-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.works-item:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.works-item:hover img{
+    transform: scale(1.1);
+}
+
+.works-item h2{
+    font-family: "Nata Sans", sans-serif;
+    font-weight: 700;
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: rgb(67, 23, 4);
+}
+
+.ORIGINAL{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.CLIENT{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.web{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.pop{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+}
+
+.wave-section{
+    position: relative;
+}
+
+.service-section{
+    position: relative;
+    line-height: 0;
+}
+
+.wave{
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+.service-body{
+   margin-top: 0;
+   background:rgb(239, 136, 57);
+   padding: 60px 20px 100px;
+   line-height: 1.6;   /* テキスト用に戻す */
+}
+
+.service-title {
+  font-family: "Nata Sans", sans-serif;
+  margin: 0 0 30px;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+  text-align: center;
+  font-size: 50px;    /* お好みで */
+}
+
+.number-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.number-title .number,
+.number-title .title{
+    font-family: "Nata Sans", sans-serif;
+    margin: 50px 0;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+.service-body img{
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.service-body .text{
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.wave-bottom{
+    margin-top: -1px;
+    transform: rotate(180deg);
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+.about-section h1{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+    text-align: center;
+    font-size: 50px;
+}
+
+.contact-section h1{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(67, 23, 4);
+    text-align: center;
+    font-size: 50px;
+}
